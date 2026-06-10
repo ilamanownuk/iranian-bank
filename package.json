@@ -1,0 +1,96 @@
+{
+  "name": "@ilamanownuk/iranian-bank",
+  "version": "1.0.0",
+  "description": "Iranian banks registry, SHEBA/IBAN validation, card detection, and React form sync",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./react": {
+      "import": {
+        "types": "./dist/react.d.ts",
+        "default": "./dist/react.js"
+      },
+      "require": {
+        "types": "./dist/react.d.cts",
+        "default": "./dist/react.cjs"
+      }
+    },
+    "./react-rhf": {
+      "import": {
+        "types": "./dist/react-rhf.d.ts",
+        "default": "./dist/react-rhf.js"
+      },
+      "require": {
+        "types": "./dist/react-rhf.d.cts",
+        "default": "./dist/react-rhf.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "pnpm build && pnpm test"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-hook-form": ">=7"
+  },
+  "peerDependenciesMeta": {
+    "react-hook-form": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "react": "^19.0.0",
+    "react-hook-form": "^7.54.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "keywords": [
+    "iran",
+    "iranian-bank",
+    "sheba",
+    "iban",
+    "bank-card",
+    "react",
+    "react-hook-form"
+  ],
+  "author": "ilamanownuk",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilamanownuk/iranian-bank.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ilamanownuk/iranian-bank/issues"
+  },
+  "homepage": "https://github.com/ilamanownuk/iranian-bank#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@11.1.1",
+  "engines": {
+    "node": ">=18"
+  }
+}
