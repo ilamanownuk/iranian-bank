@@ -1,6 +1,6 @@
 {
   "name": "@ilamanownuk/iranian-bank",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Iranian banks registry, SHEBA/IBAN validation, card detection, and React form sync",
   "license": "MIT",
   "type": "module",
